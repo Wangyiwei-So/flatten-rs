@@ -1,0 +1,19 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:base",
+    ":gitSignOff",
+    "helpers:pinGitHubActionDigests"
+  ],
+  "includePaths": [
+    "cargo.toml",
+  ],
+  "separateMajorMinor": true,
+  "separateMultipleMajor": true,
+  "separateMinorPatch": true,
+  "packageRules": [
+
+  ],
+  "regexManagers": [
+  ]
+}
