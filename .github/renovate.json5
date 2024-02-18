@@ -5,14 +5,16 @@
     ":gitSignOff",
     "helpers:pinGitHubActionDigests"
   ],
-  "includePaths": [
-    "cargo.toml",
-  ],
   "separateMajorMinor": true,
   "separateMultipleMajor": true,
   "separateMinorPatch": true,
   "packageRules": [
-
+    {
+      "packagePatterns": ["^.*"],
+      "groupName": "default",
+      "semanticCommitType": "chore",
+      "semanticCommitScope": "deps"
+    }
   ],
   "regexManagers": [
   ]
